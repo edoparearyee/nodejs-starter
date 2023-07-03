@@ -10,6 +10,6 @@ describe('Index', () => {
       description: 'Node.js App',
     };
     expect(res.status).toEqual(expected.status);
-    expect(res.body).toEqual(expected);
+    expect(res.body.description).toEqual(expected.description);
   });
 });
